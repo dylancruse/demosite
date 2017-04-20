@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Demosite</title>
+    <title>Your Website</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
     
     <link href="app/assets/stylesheets/application.css" rel="stylesheet"> 
 	  <link href="d//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
@@ -29,8 +30,7 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">Link</a></li>
+            <li><%= link_to 'About', about_path %></li>
           </ul>
           
           <ul class="nav navbar-nav navbar-right">
