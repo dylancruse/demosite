@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Examples of Site Functionality</title>
+	<%= javascript_include_tag 'functionality' %>
+</head>
+
+<body>
+
+	<h3>Home Automation System Demo</h3>
+
+    <div class="tabBar">
+        <button id="showTemps" class="tabButton">Temperature</button>
+        <button id="showLights" class="tabButton" current="current">Lights</button>
+        <button id="showAlarms" class="tabButton">Alarms</button>
+    </div>
+
+    <form id="addADevice" method="post" action="temperature.html">
+        <label>Add a device:</label>
+        <input type="text" id="newDeviceID">
+        <button>Add</button>
+    </form>
+
+
+    <div id="display">
+    </div>
+
+    <div>
+        <h3>Link to pricing/checkout total demo page</h3>
+        <%= link_to 'Pricing', pricing_path %>
+    </div>
+</body>
+
+
+</html>

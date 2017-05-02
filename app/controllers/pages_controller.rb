@@ -4,4 +4,11 @@ class PagesController < ApplicationController
   
   def about
   end
+  
+  def functionality
+  end
+  
+  def pricing
+  end
+
 end
